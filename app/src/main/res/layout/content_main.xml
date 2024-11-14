@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:paddingTop="75dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MetaWear Device"
+        android:id="@+id/tvSelectedLabel"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:textStyle="bold" />
+
+    <fragment class="com.app.joe.mwsleeptracker.MWStatusFragment"
+        android:id="@+id/status_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@+id/tvSelectedLabel"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchConnection"
+        android:switchMinWidth="60dp"
+        android:layout_alignBottom="@+id/status_fragment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:showText="false"
+        android:splitTrack="false"
+        android:singleLine="false" />
+
+    <fragment class="com.app.joe.mwsleeptracker.MWInfoFragment"
+        android:id="@+id/info_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@+id/tvSelectedLabel"
+        android:layout_below="@+id/status_fragment"/>
+
+</RelativeLayout>

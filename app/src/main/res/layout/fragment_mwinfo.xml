@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    tools:context="com.app.joe.mwsleeptracker.MWInfoFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/info_frag_header"
+        android:id="@+id/tvHeader"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="X: "
+        android:id="@+id/tvInfoAccelXLabel"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvHeader"
+        android:layout_alignStart="@+id/tvHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Y: "
+        android:id="@+id/tvInfoAccelYLabel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvInfoAccelXLabel"
+        android:layout_alignStart="@+id/tvInfoAccelXLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Z: "
+        android:id="@+id/tvInfoAccelZLabel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvInfoAccelYLabel"
+        android:layout_alignStart="@+id/tvInfoAccelYLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvInfoAccelX"
+        android:layout_above="@+id/tvInfoAccelYLabel"
+        android:layout_toEndOf="@+id/tvInfoAccelXLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvInfoAccelY"
+        android:layout_alignTop="@+id/tvInfoAccelYLabel"
+        android:layout_toEndOf="@+id/tvInfoAccelYLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvInfoAccelZ"
+        android:layout_alignBottom="@+id/tvInfoAccelZLabel"
+        android:layout_alignStart="@+id/tvInfoAccelX" />
+
+
+</RelativeLayout>
